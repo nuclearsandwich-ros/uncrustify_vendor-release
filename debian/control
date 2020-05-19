@@ -1,0 +1,13 @@
+Source: ros-testing-uncrustify-vendor
+Section: misc
+Priority: optional
+Maintainer: Steven! Ragnarök <steven@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-testing-ament-cmake, uncrustify, ros-testing-ros-workspace
+Homepage: https://github.com/uncrustify/uncrustify
+Standards-Version: 3.9.2
+
+Package: ros-testing-uncrustify-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, uncrustify, ros-testing-ros-workspace
+Description: Wrapper around uncrustify, providing nothing but a dependency on uncrustify, on some systems.
+ On others, it provides an ExternalProject build of uncrustify.
